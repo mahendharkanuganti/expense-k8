@@ -6,7 +6,7 @@ metadata:
   #below are deployment related labels
   labels:
     component: mysql
-    project: expese
+    project: expense
     tier: db
 spec:
   replicas: 2
@@ -26,7 +26,6 @@ spec:
       containers:
       - name: mysql
         image: joindevops/mysql:v1.0
-
 ---
 apiVersion: v1
 kind: Service
